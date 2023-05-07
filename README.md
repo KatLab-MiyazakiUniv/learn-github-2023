@@ -3,8 +3,6 @@
 ## 演習
 ※以下で[~]のように説明しているところでは，入力する際は[]は含めない
 ### 1. `KatLab-MiyazakiUniv/learn-github-2023`を`fork`する
-<img src="img/Fork1.PNG" width=80%>
-<img src="img/Fork2.PNG" width=80%>
 
 ### 2. `fork`した自分のリポジトリをクローンする
 ```
@@ -21,7 +19,6 @@ $ git remote add upstream https://github.com/KatLab-MiyazakiUniv/learn-github-20
 #### 4.1. githubで`issue`を建てる
 githubの`issues`タブにある`New issue`をクリックして`issue`を建てる  
 タイトルを「課題提出([自分の名前])」にして，コメントは下図のように記述する
-<img src="img/Issue.PNG" width=80%>
 #### 4.2. 作業用ブランチを切る
 ブランチを確認すると，現在`main`ブランチにいることが分かる
 ```
@@ -49,7 +46,7 @@ $ git status
 編集内容をインデックスに追加する  
 この時，`git status`で確認すると，先程の赤い表示の箇所が緑になっている
 ```
-$ git add Direction.cpp .gitkeep
+$ git add PidGain.cpp PidGain.h
 $ git status
 //編集内容が表示される
 ```
@@ -69,9 +66,6 @@ githubで自分のリポジトリを開いて以下の手順で操作する
 #### ③レビューしてほしい人を選択する
 #### ③`Create pull request`をクリック
 ※プルリクのタイトルは`close #[issue番号] [プルリクの説明]`とすると，該当issueと自動で紐づけられる
-
-<img src="img/PullRequest1.PNG" width=80%>
-<img src="img/PullRequest2.PNG" width=80%>
 
 ### 6. レビューを受けて修正する
 `Request change`があれば修正し，レビュワー全員から`Approve`をもらったらマージする
