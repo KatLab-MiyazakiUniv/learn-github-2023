@@ -7,7 +7,7 @@ class PidGain{
     double ki:
     double kd:
 
-    Pidgain(double _kp = 0.6, double _ki = 0.8, double _kd = 0.04);
+    Pidgain(double _kp = 0.6, double _ki = 0.8, double _kd = 0.4);
 };
 
 #endif
